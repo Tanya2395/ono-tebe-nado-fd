@@ -4,19 +4,22 @@ body {
   margin: 0;
   padding: 0;
   font-family: Raleway, sans-serif;
+  max-width: 1100px;
+  margin: 0 auto;
 }
 
 .header {
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
   align-items: center;
-  padding: 92px 49.48px 91px 51px;
+  padding: 92px 40px 91px 40px;
   font-size: 18px;
 }
 
 .header_menu {
   display: flex;
   justify-self: center;
+  margin-right: 20px;
 }
 
 .menu_links {
@@ -52,6 +55,11 @@ body {
 .a {
   font-size: 0%;
   line-height: normal;
+}
+
+.header_logo{
+  width: 148px;
+  height: 105px;
 }
 
 .header_logo-image {
@@ -109,7 +117,8 @@ body {
 .cover_title span { 
   font-size: 100px; 
   font-weight: 700;  
-  line-height: 100%;  
+  line-height: 100%; 
+  margin-bottom: 30px; 
 }
 
 .align-text {
@@ -141,7 +150,7 @@ body {
   display: flex;
   align-items: baseline;
   justify-content: space-evenly;
-  padding: 86px 50px 50px 80px;
+ margin-top: 50px;
   gap: 79px;
 }
 
@@ -154,7 +163,6 @@ body {
 
 .bet-button {
   width: 256px;
-  padding: 14px 32px;
   height: 51px;
   border: 1px solid white;
   background-color: transparent;
@@ -179,11 +187,11 @@ body {
 } 
 
 .lots {
-  padding: 24px 146px 24px 179px;
   display: flex;
   flex-direction: column;
   min-width: 100%;
   min-height: 100%;
+  margin-top: 200px;
 }
 
 .lots_heading {
@@ -245,11 +253,12 @@ body {
   position: relative;
   color: white;
   z-index: 1;
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 700;
   line-height: 1.2;
   text-decoration-line: underline;
   text-transform: uppercase;
+  margin-bottom: 40px;
 }
 
 .card_text {
@@ -271,10 +280,10 @@ body {
   width: fit-content;
 }
 
-
 .about {
   min-height: 595px;
-  padding: 24px 180px 24px 35px;
+  display: flex;
+  margin-top: 200px;
 }
 
 .about_column {
@@ -313,6 +322,7 @@ body {
  font-weight: 700;
  line-height: normal;
  text-transform: uppercase;
+ padding: 100px 0 100px 0;
 }
 
 .about_text {
@@ -328,10 +338,16 @@ body {
  padding: 35px;
 }
 
+.about_column_text {
+ margin-left: 100px;
+ margin-right: 50px;
+}
+
 .about_text p{
- line-height: normal; 
- font-size: 19px;
+ line-height: 24px;
+ font-size: 20px;
  font-family: "Raleway", sans-serif;
+ margin-bottom: 35px;
 }
 
 .footer {
@@ -344,6 +360,8 @@ body {
 .footer_address {
   font-style: normal;
   justify-self: start;
+  display: flex;
+  flex-direction: column;
 }
 
 .footer_menu {
